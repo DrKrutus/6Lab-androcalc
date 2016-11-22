@@ -18,7 +18,8 @@
         android:id="@+id/b2"
         android:layout_width="280dp"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:onClick="ClickButton"/>
 
     <Button
         android:text="X+Y"
@@ -28,7 +29,8 @@
         android:layout_above="@+id/b2"
         android:layout_alignParentStart="true"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:onClick="ClickButton"/>
 
     <TextView
         android:text="Results"
@@ -43,7 +45,6 @@
 
     <EditText
         android:inputType="textPersonName"
-        android:text="Name"
         android:ems="10"
         android:id="@+id/e1"
         android:layout_width="250dp"
@@ -56,7 +57,6 @@
 
     <EditText
         android:inputType="textPersonName"
-        android:text="Name"
         android:ems="10"
         android:id="@+id/e2"
         android:layout_width="250dp"
@@ -64,19 +64,6 @@
         android:layout_alignTop="@+id/textView"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="52dp"
-        android:textAlignment="center"
-        android:textSize="30sp" />
-
-    <EditText
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/e3"
-        android:layout_height="50dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="37dp"
-        android:layout_width="300dp"
         android:textAlignment="center"
         android:textSize="30sp" />
 
@@ -99,7 +86,8 @@
         android:layout_toEndOf="@+id/b2"
         android:id="@+id/b4"
         android:textSize="30sp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:onClick="ClickButton"/>
 
     <Button
         android:text="Result ->X"
@@ -110,7 +98,8 @@
         android:layout_alignBottom="@+id/b2"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/b3"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:onClick="ClickButton"/>
 
     <Button
         android:text="X xor Y"
@@ -120,7 +109,8 @@
         android:layout_toStartOf="@+id/b8"
         android:id="@+id/b6"
         android:textSize="30sp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:onClick="ClickButton"/>
 
     <Button
         android:text="X mod Y"
@@ -130,7 +120,8 @@
         android:layout_alignStart="@+id/b6"
         android:id="@+id/b5"
         android:textSize="30sp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:onClick="ClickButton"/>
 
     <Button
         android:text="X to bin"
@@ -140,7 +131,8 @@
         android:layout_toEndOf="@+id/b5"
         android:id="@+id/b7"
         android:textSize="30sp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:onClick="ClickButton"/>
 
     <TextView
         android:text="Y"
@@ -150,7 +142,8 @@
         android:textAlignment="center"
         android:textSize="30sp"
         android:layout_above="@+id/textView"
-        android:layout_toEndOf="@+id/b5" />
+        android:layout_toEndOf="@+id/b5"
+        android:onClick="ClickButton"/>
 
     <TextView
         android:text="X"
@@ -161,6 +154,28 @@
         android:textSize="30sp"
         android:textAlignment="center"
         android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/b3" />
+        android:layout_toStartOf="@+id/b3"
+        android:onClick="ClickButton"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/Resultate"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="36sp" />
+
+    <Button
+        android:text="Results?"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/b9"
+        android:layout_width="150dp" />
 
 </RelativeLayout>
